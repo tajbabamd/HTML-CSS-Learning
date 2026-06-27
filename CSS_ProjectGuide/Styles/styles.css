@@ -1,0 +1,118 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 1px red solid;
+}
+
+.title{
+    padding-top: -20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:deeppink;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+li {
+    float: left;  /*list items on same line*/
+    display: inline;
+    border-right: 1px solid blue; /*remove this to remove right border */
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin-top: 0px;
+    position: sticky; /*remove this to scroll menu also try position: sticky*/
+    top: 10px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+li a {
+    display: block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.active {
+    background-color: gray;
+    color: white;
+}
+
+.main-page-img{
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.product-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px black solid;
+}
+
+.product-img-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ABABA4;
+    margin-left: 20px;
+}
+
+footer{
+    height: 200px;
+    background-color: #40403B;
+    color:white;
+    
+}
+
+.footer-address{
+    margin-top: 20px;
+    margin-left: 20px;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    color: white;
+}
+
+.contact-div{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 200px;
+    height: 40px;
+    color:blue;
+    border-radius: 10px;
+
+}
+
+input[type="submit"]{
+    border-radius: 30px;;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 40px;
+    color:white;
+    font-style:bold;
+    
+}

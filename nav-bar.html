@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      li {
+        float: left;  /*list items on same line*/
+        display: inline;
+        border-right: 1px solid blue; /*remove this to remove right border */
+      }
+      ul {
+        width: 100%;
+        list-style-type: none;
+        margin-top: 10px;
+        position: fixed; /*remove this to scroll menu also try position: sticky*/
+        padding: 0px;
+        overflow: hidden;
+        background-color: lightgray;
+      }
+
+      li a {
+        display: block;
+        color: blue;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: orange;
+        color: white;
+      }
+      .active {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h3><span>Talent</span> Tracker</h3>
+    <nav>
+      <ul>
+        <li> <a class="active" href="#home">Home</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Contact</a> </li>
+        <li> <a href="#">Login</a> </li>
+      </ul>
+    </nav>
+    <br /><br /><br /><br /><br /><br />
+    <h1 style="margin-bottom: 1000px;">Apex Computer Education</h1>
+        
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+      <style>
+        p{  /* 1 every paragraph will be in red color and with font size 20px */
+          color:red;
+          font-size:20px;
+        }
+        h1{ /* 2 every h1 will be in blue color adn with font size 30px */
+          color:blue;
+          font-size:30px;
+        }
+        #head{  /* 3 every where id with head is used the color will be green and font size 40px */
+          color:green;
+          font-size:40px;
+        }
+
+        .A{ /* 4 everywhere where class property with A classAtribute is used the color will be orange, 
+                    font size 50px and the text will be underlined  */
+          color:orange;
+          font-size:50px;
+          text-decoration:underline;
+        }
+        .X{
+            color: blue; 
+            text-decoration: underline; 
+            text-decoration-color: yellow
+        }
+        *{ /* 5 the font family will be applied to every element */
+            font-family: 'Times New Roman';
+        }
+        b,h5{ /*6 the color will be applied to every tag mentioned here */
+            color: rgb(5, 55, 55);
+        }
+        ul+li{ /* 7.1 Ascendent the color will be applied to every first li after the ul */ 
+            color:brown;
+        }
+        ol ul{ /* 7.2 Descendent the font size 20px will be applied to every ul of ol which means ol is parent and ul is the child */
+            font-size:20px;
+        }
+        
+      </style>
+       
+    </head>  
+    <body>
+        <html>
+    <head>
+        <title>History of HTML</title>
+    </head>
+    <body>
+        <h1 id="head">A Brief History of HTML</h1>
+        <p>The first version of HTML was written by <span style="background-color: yellow;">Tim Berners-Lee</span>
+             in 1993. Since then, there have been many different versions of HTML. 
+            The most widely used version throughout the 2000's was HTML 4.01, 
+            which became an official standard in December 1999. 
+            The lastest version is HTML5</p>
+
+        <p>Another version, <u>XHTML</u>, was a rewrite of HTML as an XML language.</p>
+        <br><br><br>
+        <ol type="1">
+            <li><b>Programming Language</b></li>
+            <ul type="circle">
+                <li>C</li>
+                <li>CPP</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+            <li><b>DSA</b></li>
+            <ul type="circle">
+                <li>Arrays</li>
+                <li>Linked List</li>
+                <li>Stack</li>
+                <li>Queue</li>
+                <li>Trees</li>
+            </ul>
+            <li><b>Web Technologies</b></li>
+             <ul type="circle">
+                <li>HTML</li>
+                <li id="head">CSS</li>
+                <li>JavaScript</li>
+                    <ul type="disc">
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue</li>
+            </ul>
+                <li>Bootstrap</li>
+            </ul>
+        </ol>
+        <br><br><br>
+         <h1><b>Student Lessons</b></h1>
+
+        <p>All lessons in this course are listed below, 
+            organized by unit and module. Lessons and their assignments are also listed in the 
+            <span class="X">Student Assignment Checklist</span>
+            , which must be completed regularly and turned in to your instructor.</p>
+
+
+        <h4><b>Unit 1:</b><span class="X">Designing and Planning Web Pages</span></h4>
+            
+            <h5><b> Module 1:</b><span class="X">Basic Site Evaluation and Rubric Creation</span></h5>
+               
+               <ul type="disc">
+                    <li><b>Lesson 1:</b>
+                        <span class="X">Surveying the Possibilities</span></li>
+                    <li><b>Lesson 2:</b>
+                        <span class="X">Developing a Website Evaluation Tool</span></li>
+                </ul>
+            
+            
+            <h5><b> Module 2:</b>
+                <span class="X">Color Theory</span></h5>
+               
+               <ul type="disc">
+                    <li><b>Lesson 1:</b>
+                        <span class="X">Color Theory in Web Design</span></li>
+                </ul>
+           
+            <h5><b> Module 3:</b>
+                <span class="X">Web Standards & Accessible Design</span></h5>
+               
+               <ul type="disc">
+                    <li><b>Lesson 1:</b>
+                        <span class="X">Web Standards</span></li>
+                    <li><b>Lesson 2:</b>
+                        <span class="X">How People with Disabilities Access the Web</span></li>
+                </ul>
+           
+            <h5><b> Module 4:</b>
+                <span class="X">Planning a Website</span></h5>
+               
+               <ul type="disc">
+                    <li><b>Lesson 1:</b>
+                    <span class="X">Organizing a Website</span></li>
+                </ul>
+
+            </ul>
+
+    </body>  
+</html>
