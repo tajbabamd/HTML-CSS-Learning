@@ -1,23 +1,23 @@
 body{
-    margin:0px;
-    padding:0px;
+    margin:1px;
+    padding:1px;
     background-color: burlywood;
     
 }
 
 header{
     position:fixed;
-    top:5px;
-    left:0;
-    width:100%;
+    margin: 2px;
+    width:96.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:rgb(73, 73, 134);
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 10px 20px;
     /* border: 1px solid black; */
-    /* z-index: 1000; */
+    z-index: 1000;
    
 }
 
@@ -69,46 +69,45 @@ header ul li{
 }
 
 nav{
-    position: fixed;
-    margin-top: 170px; 
-    left: 5;
-    width: 99%;
+    position: sticky;
+    top:100px; 
+    left: 3px;
+    width: 99.5%;
     height:60px;
-    background-color:burlywood;
-    /* border: 1px solid black;     */
-    /* z-index: 999; */
+    background-color:burlywood;  
+    z-index: 988;
     
 }
 
-nav ul{
+#index-nav-ul{
     margin-top:4px;
     margin-left:2px;
     padding:5px;
     color: cadetblue;
-    /* float: left;  */
     display: inline-block;
     list-style-type:none;
-    position: fixed;
 }
 
-nav li{
+#index-nav-li{
     float: left; 
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0 10px;  
+    border: 1px solid white;
 }
 
-nav li a{
+nav ul li a{
     text-decoration:none;
     font-size:20.5px;
     padding:10px; 
 }
 
-.nav-link:hover{
+.nav-link:hover,
+#link:hover{
     border: 2px solid white;
     background-color: blue;
-    color: burlywood;
+    color: burlywood;    
 }
 
 .active {
@@ -124,45 +123,121 @@ main{
     background-attachment: fixed;
     width:100%;
     min-height:100vh;
-    /* margin-top:100px; */
-    padding-top: 160px;
+    margin-top:100px;
+    padding-top: 10px;
     padding-bottom:100px;
     border:3px solid burlywood;    
 }
 
 .welcome{
-    margin-top: 0 px;
+    margin-top: 0;
     color: whitesmoke;
     font-size:5rem;
 }
 
-.tabelh1{
-    color: aliceblue;
-    font-size:2rem;
+.texth1{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
 }
 
-.card{
-    /* position:sticky; */
+.textp{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+} 
+
+.para{
+    margin-top:0;
+    padding: 10px;
+    font-size:20px;
+    color: white;
+    font-weight: bold;
+}
+
+#services-card1{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    padding:40px;
+    width: 60%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 160, 122, 0.2);
+}
+
+.services-card2{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    padding:10px;
+    width: 40%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(255, 160, 122, 0.2);
+
+}
+
+.services-card3{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 515px;
+    padding:10px;
+    width: 40%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(255, 160, 122, 0.2);
+
+}
+
+#services-card4{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding:40px;
+    width: 60%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 160, 122, 0.2);
+
+} 
+
+.index-card{
     margin-left:100px;
     margin: 10px auto;
-    padding-top: 20px;
+    padding: 20px;
     border-radius: 10px;
     width: 80%;
     height: 30vh;
-    background-color:rgba(222, 184, 135, 0.8); 
+    background-color:rgba(222, 184, 135, 0.2); 
 
 }
 
-main p{
-    margin-top:-40px;
-    padding: 10px;
-    font-size:1rem;
-}
-
-.cars{
+#index-cars{
     width: 150px;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+#index-bike{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+
+#index-electric{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+
+#index-emcp{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 40px;
+    border-radius: 10px;
 }
 
 footer{
