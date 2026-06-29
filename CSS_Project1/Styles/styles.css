@@ -5,6 +5,9 @@ body{
     
 }
 
+        /* Start of Header bar */
+
+
 header{
     position:fixed;
     margin: 2px;
@@ -68,11 +71,15 @@ header ul li{
     margin: 0 10px;
 }
 
+
+        /* Start of Navigarion bar */
+
+
 nav{
     position: sticky;
     top:100px; 
     left: 3px;
-    width: 99.5%;
+    width: 100%;
     height:60px;
     background-color:burlywood;  
     z-index: 988;
@@ -94,7 +101,6 @@ nav{
     justify-content: center;
     list-style: none;
     margin: 0 10px;  
-    border: 1px solid white;
 }
 
 nav ul li a{
@@ -105,7 +111,7 @@ nav ul li a{
 
 .nav-link:hover,
 #link:hover{
-    border: 2px solid white;
+    border: 3px solid white;
     background-color: blue;
     color: burlywood;    
 }
@@ -115,8 +121,9 @@ nav ul li a{
     color: blue;
 }
 
+        /* Start of Main bar */
+
 main{
-    /* position:relative;     */
     background-image: url(../Images/background-img.jpeg);
     background-size: cover;
     background-position: center;
@@ -135,10 +142,25 @@ main{
     font-size:5rem;
 }
 
+        /* Text fonts and Sizes */
+
+
 .texth1{
     font-size: 30px;
     color: white;
     font-weight: bold;
+}
+
+.texth2{
+    font-size: 30px;
+    color: #FFB5B5;
+    font-weight: bold;
+}
+
+.texth3{
+    font-size: 60px;
+    font-family: sans-serif;
+    
 }
 
 .textp{
@@ -146,6 +168,12 @@ main{
     color: white;
     font-weight: bold;
 } 
+
+.textspan{
+    font-size: 26px; 
+    color:red; 
+    font-weight: bold;
+}
 
 .para{
     margin-top:0;
@@ -155,15 +183,154 @@ main{
     font-weight: bold;
 }
 
+.para2{
+    margin-top:0;
+    padding: 10px;
+    font-size:20px;
+    color: black;
+    font-weight: bold;
+}
+
+.para3{
+    margin-top:0;
+    padding: 10px;
+    font-size:20px;
+    color: #FFB5B5;
+    font-weight: bold;
+}
+
+.para4{
+    font-size:20px;
+    color: blueviolet;
+    font-weight: bold;  
+    border: 2px solid red;
+    background-color: burlywood;
+    padding: 4px;
+    text-decoration: none;
+
+}
+        /* All divition templates size and placement */
+
+#index-video{
+    position: relative;
+    z-index: 1;            /* ensures text is above video */
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 180px;
+    width: 850px;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:rgba(238, 232, 232, 0.4);
+    background-blend-mode: darken;  
+
+}
+
+#bg-video{
+    position: sticky;      /*  stays in place while scrolling */
+    margin-top: 0px;
+    margin-left: 8px;
+    width: 384px;
+    height: 160px;
+    border-radius: 20px;
+    z-index: -1; 
+}
+
+#index-car{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color:  rgba(255, 160, 122, 0.2);
+    background-image: url(../Images/car-services.jpeg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-bike{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color:  rgba(255, 160, 122, 0.2);
+    background-image: url(../Images/bike-services.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-electric{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin-top: -750px;
+    margin-left: 700px;
+    border-radius: 30px;
+    background-color:  rgba(255, 160, 122, 0.2);
+    background-image: url(../Images/electric-services.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-emcp{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 700px;
+    border-radius: 30px;
+    background-color:  rgba(255, 160, 122, 0.2);
+    background-image: url(../Images/emcp-services.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #services-card1{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 200px;
     padding:40px;
     width: 60%;
     height: 100px;
     border-radius: 20px;
-    background-color: rgba(255, 160, 122, 0.2);
+    background-color: rgba(125, 93, 81, 0.4);
+    background-blend-mode: darken;
 }
 
 .services-card2{
@@ -174,8 +341,8 @@ main{
     width: 40%;
     height: 200px;
     border-radius: 20px;
-    background-color: rgba(255, 160, 122, 0.2);
-
+    background-color: rgba(125, 93, 81, 0.9);
+    background-blend-mode: darken;
 }
 
 .services-card3{
@@ -186,9 +353,9 @@ main{
     width: 40%;
     height: 200px;
     border-radius: 20px;
-    background-color: rgba(255, 160, 122, 0.2);
-
-}
+    background-color: rgba(125, 93, 81, 0.4);
+    background-blend-mode: darken;
+}   
 
 #services-card4{
     text-align: center;
@@ -198,47 +365,52 @@ main{
     width: 60%;
     height: 100px;
     border-radius: 20px;
-    background-color: rgba(255, 160, 122, 0.2);
-
+    background-color: rgba(125, 93, 81, 0.9);
+    background-blend-mode: darken;
 } 
 
-.index-card{
-    margin-left:100px;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    height: 30vh;
-    background-color:rgba(222, 184, 135, 0.2); 
-
+#contact-image{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 240px;
+    border-radius: 30px;
+    background-image: url(../Images/templet.jpeg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    color: black;
+    font-weight: bolder;
+    
 }
 
-#index-cars{
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
+.contact-info{
+    font-size: 20px; 
+    font-family: sans-serif;
+    line-height: 1.6;
+    text-align: left;
 }
 
-#index-bike{
-    width: 120px;
-    height: 120px;
-    padding-bottom: 40px;
-    border-radius: 10px;
+.contact-info h2{
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-#index-electric{
-    width: 120px;
-    height: 120px;
-    padding-bottom: 40px;
-    border-radius: 10px;
+.contact-info p strong{
+    color: red;
 }
 
-#index-emcp{
-    width: 120px;
-    height: 120px;
-    padding-bottom: 40px;
-    border-radius: 10px;
-}
+
+        /* Start of Footer bar  */
 
 footer{
     width: 100%;    
